@@ -1,4 +1,4 @@
-# WEB_dev_env
+# maalem_web
 
 This repository provides a comprehensive development environment setup for the web version of the project. It includes a  directory structure and essential configuration files to streamline the web development process.
 
