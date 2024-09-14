@@ -9,8 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        customRed: "#FF4C33",
+        background: "#000000",
+        foreground: "#ededed",
+        customExtra: "var(--extra)",
+        
+      
+      },
+      borderRadius: {
+        '25p': '10% 30% 50% 70%',
       },
     },
   },
