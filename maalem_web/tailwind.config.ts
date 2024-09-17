@@ -16,8 +16,15 @@ const config: Config = {
         
       
       },
+    
       borderRadius: {
         '25p': '10% 30% 50% 70%',
+      },
+      backgroundImage: {
+        'onboarding-screen': "url('/assets/images/onboardingscreen_bg_web.png')",
+      },
+      fontWeight: {
+        'extra-bold': '900',
       },
     },
   },
