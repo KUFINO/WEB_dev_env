@@ -18,8 +18,24 @@ export default function FooterContent() {
 
 const Section1 = () => {
   return (
-    <div>
-      <Call />
+    <div className="flex justify-center items-center shrink-0 gap-20 pt-[5rem]">
+      <div className="flex flex-col w-full max-w-[60rem] justify-center items-center space-y-4">
+        <div className="w-full text-center text-[2.5rem] lg:text-[70px] font-comico leading-tight text-red">
+          Start with Kufino and get more customers!
+        </div>
+        <div className="text-[14px] text-center font-regular opacity-90 text-gray-300 w-[33rem]">
+          Kufino is all about connecting people with workers, we mean
+          professional workers. Get things done quicker and securely.
+        </div>
+        <div className="flex gap-4 mt-[6rem]">
+          <button className="bg-phoenix text-black px-6 py-3 rounded-lg">
+            Get Started
+          </button>
+          <button className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200">
+            About Us
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
@@ -80,30 +96,6 @@ const Section2 = () => {
               <div>Get it for Android</div>
             </a>
           </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Call = () => {
-  return (
-    <div className="flex justify-center items-center shrink-0 gap-20 pt-[5rem]">
-      <div className="flex flex-col w-full max-w-[60rem] justify-center items-center space-y-4">
-        <div className="w-full text-center text-[2.5rem] lg:text-[70px] font-comico leading-tight text-red">
-          Start with Kufino and get more customers!
-        </div>
-        <div className="text-[14px] text-center font-regular opacity-90 text-gray-300 w-[33rem]">
-          Kufino is all about connecting people with workers, we mean
-          professional workers. Get things done quicker and securely.
-        </div>
-        <div className="flex gap-4 mt-[6rem]">
-          <button className="bg-phoenix text-black px-6 py-3 rounded-lg">
-            Get Started
-          </button>
-          <button className="bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200">
-            About Us
-          </button>
         </div>
       </div>
     </div>
