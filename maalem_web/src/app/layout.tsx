@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
 import { Theme } from '@radix-ui/themes';
-import localFont from "next/font/local";
 import '../styles/globals.css';
-
-
-
-const Cabinet = localFont({
-  src: "./fonts/CabinetGrotesk-Regular.woff2",
-  variable: "--font-Cabinet-sans",
-  weight: "100 900",
-});
-
 
 export const metadata: Metadata = {
   title: "Maalem",
@@ -24,14 +14,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${Cabinet.variable}  antialiased`}
-      >
+      <head>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,700,800&display=swap"
+          rel="stylesheet"
+        />
+        <link 
+          href="https://api.fontshare.com/v2/css?f[]=comico@400&display=swap" 
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased">
         <Theme>
-
-        {children}
+          {children}
         </Theme>
-
       </body>
     </html>
   );
