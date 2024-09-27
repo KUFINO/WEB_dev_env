@@ -62,7 +62,7 @@ const config: Config = {
 			sm: 'calc(var(--radius) - 4px)',
 		  },
   		backgroundImage: {
-  			'onboarding-screen': "url('/assets/images/onboardingscreen_bg_web.png')"
+  			'onboarding-screen': "url('/assets/images/neon_green.jpeg')"
   		},
 		  fontFamily: {
 			cabinet: ['Cabinet', 'sans-serif'], 
