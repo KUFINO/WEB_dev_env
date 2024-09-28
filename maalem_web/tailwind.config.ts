@@ -10,6 +10,9 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+			sparkler: '#f3f3eb', // Light beige
+            phoenix: '#F1FD81',   // Bright yellow 
+            dobby: '#1e1e21',     // Dark 
   			customGreen: '#28B600',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -62,6 +65,7 @@ const config: Config = {
 			sm: 'calc(var(--radius) - 4px)',
 		  },
   		backgroundImage: {
+			'login_side' :"url('/assets/images/login_side_image.jpeg')",
   			'onboarding-screen': "url('/assets/images/neon_green.jpeg')"
   		},
 		  fontFamily: {

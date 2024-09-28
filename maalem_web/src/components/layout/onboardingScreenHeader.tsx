@@ -1,6 +1,5 @@
 import React from 'react';
 import SearchbarPage from '../ui/searchbar';
-import LogingPage from "@/pages/loginpage";
 import Link from 'next/link';
 
 const NavBar : React.FC =()=>{

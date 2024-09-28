@@ -1,4 +1,3 @@
-import Image from "next/image";
 import OnboardingPage from '../pages/onboarding';
 
 export default function Home() {

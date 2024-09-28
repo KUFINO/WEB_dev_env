@@ -11,7 +11,7 @@ const OnboardingPage: React.FC = () => {
           Need a Hand?
         </h1>
         <h1 className="text-3xl lg:text-4xl md:text-4xl sm:text-2xl  text-customGreen text-center font-black ml-0 lg:ml-[400px] sm:ml-[270px] md:ml-[310px] ">
-          We've Got You Covered!
+          We&apos; ve Got You Covered!
         </h1>
       </main>
       <Footer />
