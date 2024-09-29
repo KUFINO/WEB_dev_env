@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from '@/components/layout/onboardingScreenFooter';
-import NavBar from '@/components/layout/onboardingScreenHeader';
+import Footer from '@/app/onboardingscreen/Footer';
+import NavBar from '@/app/onboardingscreen/Navbar';
 
 const OnboardingPage: React.FC = () => {
   return (
