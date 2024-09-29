@@ -19,7 +19,7 @@ return (
 
     <ul className="flex space-x-4">
     <SearchbarPage/>
-    <Link href="/loginpage">
+    <Link href="/login">
     <button className="animate-bounce bg-transparent h-10 border  border-phoenix rounded-mixed text-sm py-2 px-4 ">
         Log in
       </button>
