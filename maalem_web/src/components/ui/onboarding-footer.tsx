@@ -3,8 +3,9 @@ import FooterContent from "./footer-content";
 
 const Footer: React.FC = () => {
   return (
+    // TOFIX
     <div
-      className="relative w-full h-[600px]" 
+      className="relative w-full max-h-[600px]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className="relative h-[calc(100vh+600px)] -top-[100vh]">

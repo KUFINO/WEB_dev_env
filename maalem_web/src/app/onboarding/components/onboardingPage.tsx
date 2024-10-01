@@ -1,12 +1,7 @@
-"use client";
 import React from "react";
 import Footer from "@/components/ui/onboarding-footer";
-import { useEffect } from "react";
-import Lenis from "lenis";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -18,22 +13,9 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Icons } from "@/components/ui/icons";
-import { SkeletonCard } from "@/components/ui/skelton-card";
+import JoinWaitlistButton from "./ui/joinWaitList";
 
 export default function OnboardingPage() {
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
-
   const components: { title: string; href: string; description: string }[] = [
     {
       title: "Service Request",
@@ -166,13 +148,11 @@ export default function OnboardingPage() {
           </div>
           <div></div>
           <div className="h-[30rem] w-[77rem] bg-sparky rounded-xl mt-[4rem] relative">
-            {!imageLoaded && <SkeletonCard />}
             <Image
               src="/assets/backgrounds/morocco_1.jpeg"
               alt="Image"
-              className={`rounded-xl object-cover transition-opacity duration-500 ${imageLoaded ? "opacity-100" : "opacity-0"}`}
+              className={`rounded-xl object-cover transition-opacity duration-500`}
               fill
-              onLoadingComplete={() => setImageLoaded(true)}
             />
           </div>
         </div>
@@ -194,7 +174,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
+            className,
           )}
           {...props}
         >
@@ -208,68 +188,3 @@ const ListItem = React.forwardRef<
   );
 });
 ListItem.displayName = "ListItem";
-
-function JoinWaitlistButton() {
-  const [isHovered, setIsHovered] = useState(false);
-  return (
-    <div
-      className="relative w-[30rem] h-[50px] bg-transparent rounded-full border border-gray-200 cursor-pointer"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <AnimatePresence initial={false}>
-        {!isHovered ? (
-          <motion.div
-            initial={{ opacity: 0.5, scale: 0.98 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="absolute inset-0 flex items-center justify-between px-1"
-          >
-            <div className="flex items-center space-x-2">
-              <div className="flex -space-x-[1rem]">
-                <img
-                  src="/assets/portraits/portrait3.jpg"
-                  alt="avatar"
-                  className="w-[2rem] h-[2.3rem] rounded-full"
-                />
-                <img
-                  src="/assets/portraits/portrait1.jpg"
-                  alt="avatar"
-                  className="w-[2rem] h-[2.3rem] rounded-full"
-                />
-              </div>
-              <span className="font-medium text-dobby">
-                47k+ members already joined
-              </span>
-            </div>
-            {/* Join Waitlist Button */}
-            <motion.button
-              className="bg-phoenix text-dobby text-[1rem] font-medium px-9 py-2 rounded-full"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Join waitlist
-            </motion.button>
-          </motion.div>
-        ) : (
-          <motion.div
-            key="hovered"
-            initial={{ opacity: 0.5, scale: 0.98 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="absolute inset-0 flex items-center justify-center"
-          >
-            {/* Full-width Join Waitlist button */}
-            <motion.button
-              className="bg-phoenix text-dobby text-[1rem] font-medium w-full h-full rounded-full"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Join waitlist
-            </motion.button>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-}
