@@ -1,5 +1,5 @@
+import SocialIcons from "@/components/ui/social-icons";
 import React from "react";
-import SocialIcons from "./social-icons";
 
 export default function FooterContent() {
   return (

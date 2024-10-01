@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "@/components/ui/onboarding-footer";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -14,6 +13,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Icons } from "@/components/ui/icons";
 import JoinWaitlistButton from "./ui/joinWaitList";
+import Footer from "./ui/onboarding-footer";
 
 export default function OnboardingPage() {
   const components: { title: string; href: string; description: string }[] = [
@@ -126,7 +126,9 @@ export default function OnboardingPage() {
           <NavigationMenuItem>
             <Link href="/docs" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <span className="text-phoenix">Start Free</span>
+                <Link href="/login">
+                  <span className="text-phoenix">Start Free</span>
+                </Link>
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
