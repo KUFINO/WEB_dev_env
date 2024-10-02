@@ -4,7 +4,7 @@ import React from "react";
 export default function FooterContent() {
   return (
     <div
-      className="bg-black py-8 px-12 h-full w-full flex flex-col justify-between relative"
+      className="bg-black py-8 px-12 h-full w-full flex flex-col justify-between relative rounded-3xl"
       style={{
         backgroundImage: `repeating-radial-gradient(circle, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 2px)`,
         opacity: 1,
@@ -20,10 +20,10 @@ const Section1 = () => {
   return (
     <div className="flex justify-center items-center shrink-0 gap-20 pt-[5rem]">
       <div className="flex flex-col w-full max-w-[60rem] justify-center items-center space-y-4">
-        <div className="w-full text-center text-[2.5rem] lg:text-[70px] font-comico leading-tight text-red">
+        <div className="w-full text-center text-[2.5rem] lg:text-[70px] font-comico leading-tight text-sparkler">
           Start with Kufino and get more customers!
         </div>
-        <div className="text-[14px] text-center font-regular opacity-90 text-gray-300 w-[33rem]">
+        <div className="text-[14px] text-center opacity-60 text-sparkler  w-[33rem]">
           Kufino is all about connecting people with workers, we mean
           professional workers. Get things done quicker and securely.
         </div>
