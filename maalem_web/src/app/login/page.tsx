@@ -13,8 +13,8 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-sparkler flex flex-col lg:flex-row h-screen w-full overflow-hidden">
-      <div className="flex-[0_0_60%] h-[99%] w-[95%] ml-3 md:w-[98%] md:ml-2 sm:w-[98%] mt-1 bg-login_side bg-no-repeat bg-cover flex items-end justify-center pb-10 rounded-[25px]">
+    <div className="bg-sparkler flex flex-col justify-center items-center lg:flex-row min-h-[100vh] w-full overflow-hidden">
+      <div className="flex-[0_0_60%] h-full w-[75%] ml-3 md:w-[98%] md:ml-2 sm:w-[98%] mt-1 bg-login_side bg-no-repeat bg-cover flex items-end justify-center pb-10 rounded-[25px]">
         <div className="text-white text-center">
           <div className="flex items-center justify-center mb-6 md:mt-6 sm:mt-6">
             <LeftArrow />
