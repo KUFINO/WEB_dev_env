@@ -1,22 +1,16 @@
-"use client";
-import React, { useState } from "react";
-import SignupForm from "./components/SignupForm";
-import StepButtons from "./components/StepButtons";
-import { APP_NAME } from "@/constants";
-import { LeftArrow } from "../../../public/assets/icons/Icons";
+import React from 'react';
+import SignupForm from './components/SignupForm';
+import StepButtonControl from './components/StepButtonControl'; 
+import { APP_NAME } from "@/constants"; 
+import { LeftArrow } from "@/icons";
+
 
 const LoginPage: React.FC = () => {
-  const [activeButton, setActiveButton] = useState(0);
-
-  const handleButtonClick = (index: number) => {
-    setActiveButton(index);
-  };
-
   return (
-    <div className="bg-sparkler flex flex-col justify-center items-center lg:flex-row min-h-[100vh] w-full overflow-hidden">
-      <div className="flex-[0_0_60%] h-full w-[75%] ml-3 md:w-[98%] md:ml-2 sm:w-[98%] mt-1 bg-login_side bg-no-repeat bg-cover flex items-end justify-center pb-10 rounded-[25px]">
+    <div className="bg-sparkler flex flex-col h-screen w-full lg:flex-row">
+      <div className="flex hidden h-[99%] w-[95%] mt-1 bg-login_side bg-no-repeat bg-cover items-end justify-center pb-10 rounded-[25px] sm:w-[98%] sm:ml-[0.40rem] md:w-[98%] md:ml-2 lg:ml-3 lg:flex-[0_0_50%] lg:flex">
         <div className="text-white text-center">
-          <div className="flex items-center justify-center mb-6 md:mt-6 sm:mt-6">
+          <div className="flex items-center justify-center mb-6">
             <LeftArrow />
             <h2 className="text-xl font-bold">{APP_NAME}</h2>
           </div>
@@ -25,15 +19,10 @@ const LoginPage: React.FC = () => {
             <p>Complete these easy steps to register</p>
             <p>your account.</p>
           </div>
-
-          <StepButtons
-            activeButton={activeButton}
-            onButtonClick={handleButtonClick}
-          />
+          <StepButtonControl /> 
         </div>
       </div>
-
-      <div className="flex-1 h-full w-full flex items-center justify-center lg:mr-5 lg:mt-0">
+      <div className="h-screen w-full p-10 flex items-start justify-center">
         <SignupForm />
       </div>
     </div>
