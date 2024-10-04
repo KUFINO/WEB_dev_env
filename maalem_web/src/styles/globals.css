@@ -2,25 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@font-face {
-  font-family: 'Cabinet';
-  src: url('/maalem_web/src/app/fonts/CabinetGrotesk-Regular.woff') format('woff'),
-       url('/maalem_web/src/app/fonts/CabinetGrotesk-Regular.woff2') format('woff2');
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-main: var(--font-Cabinet-sans);
+}
 
-
-
-@layer utilities {
-
-  .text-balance {
-
-    text-align: justify; 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+    --extra: #ff4c33;
   }
 }
 
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-main);
+}
+
+.font-comico {
+  font-family: "Comico", cursive;
+}
+
+@font-face {
+  font-family: "Cabinet";
+  src:
+    url("/maalem_web/src/app/fonts/CabinetGrotesk-Regular.woff") format("woff"),
+    url("/maalem_web/src/app/fonts/CabinetGrotesk-Regular.woff2")
+      format("woff2");
+}
+
+@layer utilities {
+  .text-balance {
+    text-align: justify;
+  }
+}
 
 @layer base {
   :root {
@@ -83,7 +107,6 @@
     @apply border-border;
   }
   body {
-    @apply font-cabinet; 
+    @apply bg-background text-foreground;
   }
- 
 }
