@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { GoogleIcon, GitHubIcon } from "../../../../public/assets/icons/Icons";
+import { GoogleIcon, GitHubIcon } from "@/icons";
 
 const AuthButtons: React.FC = () => (
   <div className="flex justify-center space-x-4 sm:mt-4 md:mt-4 lg:mt-4">

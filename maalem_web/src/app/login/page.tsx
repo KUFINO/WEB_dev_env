@@ -2,7 +2,7 @@ import React from 'react';
 import SignupForm from './components/SignupForm';
 import StepButtonControl from './components/StepButtonControl'; 
 import { APP_NAME } from "@/constants"; 
-import { LeftArrow } from "../../../public/assets/icons/Icons";
+import { LeftArrow } from "@/icons";
 
 const LoginPage: React.FC = () => {
   return (
