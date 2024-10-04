@@ -64,7 +64,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        login_side: "url('/assets/images/login_side_image.jpeg')",
+        login_side: "url('/assets/backgrounds/morocco_1.jpeg')",
         "onboarding-screen": "url('/assets/images/neon_green.jpeg')",
       },
       fontFamily: {
@@ -76,6 +76,11 @@ const config: Config = {
         semiBold: "600",
         bold: "700",
         extraBold: "900",
+      },
+      fontFamily: {
+        sans: ['var(--font-cabinet-grotesk)', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'monospace'],
+        geist: ['var(--font-geist)', 'sans-serif'],
       },
     },
   },
