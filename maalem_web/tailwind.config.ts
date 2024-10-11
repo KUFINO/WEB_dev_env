@@ -68,20 +68,10 @@ const config: Config = {
         "onboarding-screen": "url('/assets/images/neon_green.jpeg')",
       },
       fontFamily: {
-        cabinet: ["Cabinet", "sans-serif"],
-      },
-      fontWeight: {
-        extraLight: "200",
-        regular: "400",
-        semiBold: "600",
-        bold: "700",
-        extraBold: "900",
-      },
-      fontFamily: {
-        sans: ['var(--font-cabinet-grotesk)', 'sans-serif'],
-        mono: ['var(--font-geist-mono)', 'monospace'],
-        geist: ['var(--font-geist)', 'sans-serif'],
-      },
+        main: "var(--font-main)",
+        booldy: "var(--font-booldy)",
+        handy: "var(--font-handy)",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

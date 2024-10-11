@@ -11,7 +11,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-main: var(--font-Cabinet-sans);
+  --font-main: var(--font-cabinet-grotesk);
+  --font-handy: var(--font-comico);
+  --font-booldy: var(--font-cabinet-grotesk-black);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,23 +24,6 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-main);
-}
-
-.font-comico {
-  font-family: "Comico", cursive;
-}
-
-@font-face {
-  font-family: "Cabinet";
-  src:
-    url("/maalem_web/src/app/fonts/CabinetGrotesk-Regular.woff") format("woff"),
-    url("/maalem_web/src/app/fonts/CabinetGrotesk-Regular.woff2")
-      format("woff2");
-}
 
 @layer utilities {
   .text-balance {

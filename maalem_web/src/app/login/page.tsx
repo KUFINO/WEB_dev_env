@@ -8,8 +8,12 @@ import { LeftArrow } from "@/icons";
 const LoginPage: React.FC = () => {
   return (
     <div className="bg-sparkler flex flex-col h-screen w-full lg:flex-row">
-      <div className="flex hidden h-[99%] w-[95%] mt-1 bg-login_side bg-no-repeat bg-cover items-end justify-center pb-10 rounded-[25px] sm:w-[98%] sm:ml-[0.40rem] md:w-[98%] md:ml-2 lg:ml-3 lg:flex-[0_0_50%] lg:flex">
-        <div className="text-white text-center">
+  <div className="absolute inset-0 bg-login_side bg-no-repeat bg-cover"></div>
+  
+  <div className="absolute inset-0 bg-black opacity-30"></div>
+
+  </div>  
+      <div className="relative z-10 text-white text-center">
           <div className="flex items-center justify-center mb-6">
             <LeftArrow />
             <h2 className="text-xl font-bold">{APP_NAME}</h2>

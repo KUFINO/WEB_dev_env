@@ -164,10 +164,10 @@ const MenuItemLink: React.FC<MenuItemLinkProps> = ({
 );
 
 const MainContent: React.FC = () => (
-  <div className="flex flex-col justify-center items-center h-[75rem] w-full">
+  <div className="flex flex-col justify-center items-center h-[45rem] w-full">
     <JoinWaitlistButton />
     <div>
-      <div className="flex flex-col justify-center items-center text-dobby text-[9rem] font-black space-y-[-2rem] tracking-tighter leading-[1.1]">
+      <div className="flex flex-col justify-center items-center text-dobby font-booldy text-[9rem] font-black space-y-[-2rem] tracking-tighter leading-[1.1]">
         <div>FIX IT NOW</div>
         <div>EASILY & SPEEDILY!</div>
       </div>
@@ -177,14 +177,6 @@ const MainContent: React.FC = () => (
           best workers
         </span>
         .
-      </div>
-      <div className="h-[30rem] w-[77rem] bg-sparky rounded-xl mt-[4rem] relative">
-        <Image
-          src="/assets/backgrounds/morocco_1.jpeg"
-          alt="Image"
-          className="rounded-xl object-cover transition-opacity duration-500"
-          fill
-        />
       </div>
     </div>
   </div>
