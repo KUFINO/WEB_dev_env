@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -164,10 +163,10 @@ const MenuItemLink: React.FC<MenuItemLinkProps> = ({
 );
 
 const MainContent: React.FC = () => (
-  <div className="flex flex-col justify-center items-center h-[45rem] w-full">
+  <div className="flex flex-col justify-center items-center h-[40rem] w-full">
     <JoinWaitlistButton />
     <div>
-      <div className="flex flex-col justify-center items-center text-dobby font-booldy text-[9rem] font-black space-y-[-2rem] tracking-tighter leading-[1.1]">
+      <div className="flex flex-col justify-center items-center text-dobby font-booldy text-[7rem] font-black space-y-[-2rem] tracking-tight leading-[1.1]">
         <div>FIX IT NOW</div>
         <div>EASILY & SPEEDILY!</div>
       </div>

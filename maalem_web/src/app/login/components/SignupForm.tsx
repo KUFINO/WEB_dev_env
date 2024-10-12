@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -17,9 +18,18 @@ const SignupForm: React.FC = () => {
   const inputClassName = "h-12 w-full border-2 focus:border-2 bg-sparkler text-dobby placeholder-dobby/50 rounded-md px-3 text-sm";
 
   return (
-    <div className="fixed top-0 right-0 w-1/2 h-full overflow-y-auto bg-[#F7F4EF] p-8">
+    <div className="w-full h-screen p-6 bg-sparkler">
       <div className="max-w-md mx-auto">
-        <h2 className="text-xl font-bold text-dobby text-center">Create Your Account</h2>
+        <div className="flex justify-center mb-6">
+          <Image
+            src="/assets/logos/logo.png"
+            alt="Kufino Logo"
+            width={60}
+            height={60}
+            priority
+          />
+        </div>
+        <h2 className="text-4xl font-bold text-dobby text-center">Create Your Account</h2>
         <p className="mt-1 text-sm text-dobby opacity-70 pb-5 text-center">
           Please provide your information to set up your account (Beta Version)
         </p>

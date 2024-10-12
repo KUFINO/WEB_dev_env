@@ -35,7 +35,6 @@ export default function JoinWaitlistButton() {
                 47k+ members already joined
               </span>
             </div>
-            {/* Join Waitlist Button */}
             <motion.button
               className="bg-phoenix text-dobby text-[1rem] font-medium px-9 py-2 rounded-full"
               whileHover={{ scale: 1.02 }}
@@ -52,7 +51,6 @@ export default function JoinWaitlistButton() {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="absolute inset-0 flex items-center justify-center"
           >
-            {/* Full-width Join Waitlist button */}
             <motion.button
               className="bg-phoenix text-dobby text-[1rem] font-medium w-full h-full rounded-full"
               whileHover={{ scale: 1.02 }}
