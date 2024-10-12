@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cabinetGrotesk.variable} ${cabinetGroteskBlack.variable} ${comico.variable}`}>
-      <body className="antialiased">
+      <body className="antialiased font-main">
         <Theme>{children}</Theme>
       </body>
     </html>

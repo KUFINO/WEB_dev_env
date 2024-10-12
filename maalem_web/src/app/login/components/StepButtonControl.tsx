@@ -7,7 +7,6 @@ const StepButtonControl: React.FC = () => {
 
   const handleButtonClick = (index: number) => {
     setActiveButton(index);
- 
   };
 
   return (

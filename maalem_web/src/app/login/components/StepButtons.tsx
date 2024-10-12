@@ -10,13 +10,15 @@ interface StepButtonsProps {
 
 const StepButtons: React.FC<StepButtonsProps> = ({ activeButton, onButtonClick }) => {
   return (
-    <div className="flex flex-col mt-10 w-full space-y-4 sm:space-y-4 md:space-y-4 lg:space-y-4">
+    <div className="flex flex-col justify-center items-center mt-10 w-full space-y-4 sm:space-y-4 md:space-y-4 lg:space-y-4">
       {STEPS.map((text, index) => (
         <Button
           key={index}
           onClick={() => onButtonClick(index)}
-          className={`flex items-center justify-start w-full h-12 
-          ${activeButton === index ? 'bg-white text-black' : 'bg-dobby text-white'} 
+          className={`flex items-center justify-start w-[80%] h-12 
+          ${activeButton === index ?
+            'bg-sparkler text-dobby hover:bg-sparkler' : 
+            'bg-dobby text-sparkler hover:bg-dobby'} 
           h-12 sm:h-12 md:h-12 lg:h-12`}
         >
           <RoundNumberCircle number={index + 1} isActive={activeButton === index} />

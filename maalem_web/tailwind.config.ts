@@ -64,7 +64,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        login_side: "url('/assets/backgrounds/morocco_1.jpeg')",
+        login_side: "url('/assets/backgrounds/login2.jpg')",
         "onboarding-screen": "url('/assets/images/neon_green.jpeg')",
       },
       fontFamily: {

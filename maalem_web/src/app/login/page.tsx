@@ -1,32 +1,21 @@
 import React from 'react';
 import SignupForm from './components/SignupForm';
-import StepButtonControl from './components/StepButtonControl'; 
 import { APP_NAME } from "@/constants"; 
 import { LeftArrow } from "@/icons";
 
-
 const LoginPage: React.FC = () => {
   return (
-    <div className="bg-sparkler flex flex-col h-screen w-full lg:flex-row">
-  <div className="absolute inset-0 bg-login_side bg-no-repeat bg-cover"></div>
-  
-  <div className="absolute inset-0 bg-black opacity-30"></div>
-
-  </div>  
-      <div className="relative z-10 text-white text-center">
-          <div className="flex items-center justify-center mb-6">
-            <LeftArrow />
-            <h2 className="text-xl font-bold">{APP_NAME}</h2>
-          </div>
-          <h1 className="text-2xl font-bold pb-2">GET STARTED WITH US</h1>
-          <div className="mt-1 text-sm text-gray-400">
+    <div className="bg-sparkler flex h-screen w-full">
+      <div className="hidden lg:flex lg:w-1/2 bg-login_side bg-no-repeat bg-cover items-end justify-center pb-10 rounded-[25px] m-1">
+        <div className="text-sparkler text-center">
+          <h1 className="text-3xl font-bold">GET STARTED WITH US</h1>
+          <div className="mb-[1rem] text-sm text-sparkler opacity-70">
             <p>Complete these easy steps to register</p>
             <p>your account.</p>
           </div>
-          <StepButtonControl /> 
         </div>
       </div>
-      <div className="h-screen w-full p-10 flex items-start justify-center">
+      <div className="w-full lg:w-1/2 p-4 sm:p-6 md:p-8 lg:p-10 flex items-center justify-center">
         <SignupForm />
       </div>
     </div>
